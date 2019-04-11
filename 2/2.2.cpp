@@ -5,29 +5,34 @@
 
 using namespace std;
 
-void reverse_string(stack <char> input);
+//void reverse_string(stack <char> input);
 
 int main()
 {
-    stack <char> input;
-    string InputString;
-    cin >> InputString;
-    for(int i = 0; i < InputString.length(); i++)
+//    stack <char> input;
+//    string InputString;
+//    cin >> InputString;
+//    for(int i = 0; i < InputString.length(); i++)
+//    {
+//        input.push(InputString[i]);
+//    }
+//    cout << "Reversed String is : ";
+//    reverse_string(input);
+    string s;
+    cin >> s;
+    for (int i = 0; i < s.length(); i++)
     {
-        input.push(InputString[i]);
+        cout << i << ":  " << s[i] << endl;
     }
-    cout << "Reversed String is : ";
-    reverse_string(input);
-
     return 0;
 }
 
-void reverse_string(stack <char> input)
-{
-    while(!input.empty())
-    {
-        cout << input.top();
-        input.pop();
-    }
-    cout << " ";
-}
+//void reverse_string(stack <char> input)
+//{
+//    while(!input.empty())
+//    {
+//        cout << input.top();
+//        input.pop();
+//    }
+//    cout << " ";
+//}
